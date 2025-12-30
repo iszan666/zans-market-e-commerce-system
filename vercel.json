@@ -1,0 +1,8 @@
+{
+    "github": {
+        "silent": true
+    },
+    "buildCommand": "cd client && npm run build",
+    "outputDirectory": "client/.next",
+    "installCommand": "cd client && npm install"
+}

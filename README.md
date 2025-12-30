@@ -61,6 +61,26 @@ This project uses RLS to protect sensitive data.
 - **Profiles**: Restricted to self-access and admins.
 - **Orders**: Users see their own; Admins see all.
 
+## 🌐 Deployment (Option A)
+
+### 1. Frontend (Vercel)
+- **Repo**: Connect your GitHub repository.
+- **Root Directory**: `client`
+- **Build Command**: `npm run build`
+- **Output Directory**: `.next`
+- **Environment Variables**:
+  - `NEXT_PUBLIC_API_URL`: `https://your-server-url.com/api`
+
+### 2. Backend (Render / Railway)
+- **Repo**: Connect the same GitHub repository.
+- **Root Directory**: `server`
+- **Start Command**: `node index.js`
+- **Environment Variables**:
+  - `PORT`: `5000`
+  - `SUPABASE_URL`: (Your Supabase URL)
+  - `SUPABASE_KEY`: (Your Service Role Key)
+  - `JWT_SECRET`: (Your JWT Secret)
+
 ---
 
 Built with ❤️ by [Iszan](https://github.com/iszan666) | [ZansMarket GitHub Repository](https://github.com/iszan666/zans-market-e-commerce-system.git)
